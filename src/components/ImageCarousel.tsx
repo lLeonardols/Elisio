@@ -5,13 +5,13 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const ImageCarousel = () => {
   // ✅ Use APENAS o caminho relativo à pasta public
   const images = [
-    '/imagens/Elisio1.jpg',
-    '/imagens/Elisio2.jpg',
-    '/imagens/Elisio3.jpg',
-    '/imagens/Elisio4.jpg',
-    '/imagens/Elisio5.jpg',
-    '/imagens/Elisio6.jpg',
-    '/imagens/Elisio7.jpg',
+    '/Elisio/imagens/Elisio1.jpg',
+    '/Elisio/imagens/Elisio2.jpg',
+    '/Elisio/imagens/Elisio3.jpg',
+    '/Elisio/imagens/Elisio4.jpg',
+    '/Elisio/imagens/Elisio5.jpg',
+    '/Elisio/imagens/Elisio6.jpg',
+    '/Elisio/imagens/Elisio7.jpg',
   ];
   
   const [currentIndex, setCurrentIndex] = useState(0);
