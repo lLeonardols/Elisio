@@ -7,7 +7,7 @@ export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
     plugins: [react(), tailwindcss()],
-    base: '/Elisio/', // ← LINHA CRÍTICA! Nome do seu repositório com barras
+    base: mode === 'production' ? '/Elisio/' : '/', // ← MUDAR AQUI
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
     },

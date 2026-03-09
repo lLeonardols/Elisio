@@ -20,12 +20,12 @@ const Navbar = () => {
 
   const menuItems = [
     { name: 'Início', href: isHome ? '#inicio' : '/#inicio', type: 'link' },
-    { name: 'Sobre', href: isHome ? '#sobre' : '/#sobre', type: 'link' },
+    // { name: 'Sobre', href: isHome ? '#sobre' : '/#sobre', type: 'link' },
     { name: 'Modalidades', href: isHome ? '#modalidades' : '/#modalidades', type: 'link' },
     { name: 'Campanhas', href: '/campanhas', type: 'route' },
-    { name: 'Treinadores', href: isHome ? '#treinadores' : '/#treinadores', type: 'link' },
-    { name: 'Planos', href: isHome ? '#planos' : '/#planos', type: 'link' },
-    { name: 'Loja', href: '/loja', type: 'route' },
+    // // { name: 'Treinadores', href: isHome ? '#treinadores' : '/#treinadores', type: 'link' },
+    // // { name: 'Planos', href: isHome ? '#planos' : '/#planos', type: 'link' },
+    // { name: 'Loja', href: '/loja', type: 'route' },
     { name: 'Catálogo', href: '/catalogo', type: 'route' },
     { name: 'Contato', href: isHome ? '#contato' : '/#contato', type: 'link' },
   ];
