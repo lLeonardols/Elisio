@@ -3,11 +3,15 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const ImageCarousel = () => {
+  // ✅ Use APENAS o caminho relativo à pasta public
   const images = [
-    "https://images.unsplash.com/photo-1571902251103-d71b46b5fce3?q=80&w=1974&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=2069&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=2069&auto=format&fit=crop"
+    '/imagens/Elisio1.jpg',
+    '/imagens/Elisio2.jpg',
+    '/imagens/Elisio3.jpg',
+    '/imagens/Elisio4.jpg',
+    '/imagens/Elisio5.jpg',
+    '/imagens/Elisio6.jpg',
+    '/imagens/Elisio7.jpg',
   ];
   
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -31,7 +35,7 @@ const ImageCarousel = () => {
           exit={{ opacity: 0, x: -50 }}
           transition={{ duration: 0.5 }}
           className="w-full h-full object-cover"
-          referrerPolicy="no-referrer"
+          alt={`Imagem ${currentIndex + 1}`}
         />
       </AnimatePresence>
       
@@ -55,7 +59,9 @@ const ImageCarousel = () => {
           <button
             key={idx}
             onClick={() => setCurrentIndex(idx)}
-            className={`w-2 h-2 rounded-full transition-all ${idx === currentIndex ? 'bg-primary w-6' : 'bg-white/50'}`}
+            className={`w-2 h-2 rounded-full transition-all ${
+              idx === currentIndex ? 'bg-primary w-6' : 'bg-white/50'
+            }`}
           />
         ))}
       </div>
