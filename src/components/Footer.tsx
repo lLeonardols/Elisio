@@ -37,7 +37,7 @@ const Footer = () => {
         
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-600 text-sm">
-            © 2024 Elísio Fitness. Todos os direitos reservados.
+            © 2026 Leonardo Marques Todos os direitos reservados.
           </p>
           <div className="flex gap-8">
             <a href="#" className="text-gray-600 hover:text-white text-xs uppercase tracking-widest">Privacidade</a>

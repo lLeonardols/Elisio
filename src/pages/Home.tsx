@@ -169,7 +169,7 @@ const Home = () => {
       </section>
 
       {/* 4. Treinadores */}
-      <section id="treinadores" className="py-24 bg-secondary">
+      <section id="Atendentes e Treinadores" className="py-24 bg-secondary">
         <div className="max-w-7xl mx-auto px-4">
           <SectionHeading 
             title="Nossa Equipe" 
@@ -178,7 +178,7 @@ const Home = () => {
           
           <div className="grid md:grid-cols-3 gap-12">
             {[
-              { name: "João Silva", role: "Especialista em Musculação", img: "https://images.unsplash.com/photo-1567013127542-490d757e51fe?q=80&w=1974&auto=format&fit=crop" },
+              { name: "Jessica Queiroz", role: "Atendende especializada em pessoas", img: "/Elisio/imagens/Elisio1.jpg" },
               { name: "Maria Oliveira", role: "Instrutora de Funcional", img: "https://images.unsplash.com/photo-1548690312-e3b507d17a4d?q=80&w=1974&auto=format&fit=crop" },
               { name: "Carlos Santos", role: "Coach de Yoga e Mobilidade", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" },
             ].map((coach, idx) => (
